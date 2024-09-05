@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-no-package-self-import",
+  "version": "0.1.0",
+  "description": "An ESLint plugin for finding packages that import themselves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viodotcom/eslint-plugin-no-package-self-import.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Gerrit Burger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viodotcom/eslint-plugin-no-package-self-import/issues"
+  },
+  "homepage": "https://github.com/viodotcom/eslint-plugin-no-package-self-import#readme"
+}
