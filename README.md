@@ -28,31 +28,45 @@ Add `no-package-self-import` to the plugins section of your `.eslintrc` configur
 }
 ```
 
-
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
     "rules": {
-        "no-package-self-import/rule-name": 2
+        "no-package-self-import/rule-name": "warn"
     }
 }
 ```
 
+Or use the recommended configuration:
 
+```json
+{
+    "extends": [
+        "plugin:no-package-self-import/recommended"
+    ]
+}
+```
 
 ## Configurations
 
 <!-- begin auto-generated configs list -->
-TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
+
+|    | Name          |
+| :- | :------------ |
+| ✅  | `recommended` |
+
 <!-- end auto-generated configs list -->
-
-
 
 ## Rules
 
 <!-- begin auto-generated rules list -->
-TODO: Run eslint-doc-generator to generate the rules list.
+
+💼 Configurations enabled in.\
+✅ Set in the `recommended` configuration.
+
+| Name                                                           | Description                              | 💼 |
+| :------------------------------------------------------------- | :--------------------------------------- | :- |
+| [no-package-self-import](docs/rules/no-package-self-import.md) | Disallow importing from the same package | ✅  |
+
 <!-- end auto-generated rules list -->
-
-
