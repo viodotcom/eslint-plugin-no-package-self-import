@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-no-package-self-import",
   "version": "0.1.0",
-  "description": "An ESLint plugin for finding packages that import themselves",
+  "description": "An ESLint plugin for finding instances of a package importing from itself",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viodotcom/eslint-plugin-no-package-self-import.git"
@@ -21,7 +21,6 @@
     "lint": "npm-run-all \"lint:*\"",
     "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
     "lint:js": "eslint .",
-    "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator"
   },
   "dependencies": {
@@ -33,7 +32,6 @@
     "eslint-doc-generator": "^1.0.0",
     "eslint-plugin-eslint-plugin": "^6.0.0",
     "eslint-plugin-n": "^17.0.0",
-    "mocha": "^10.0.0",
     "npm-run-all2": "^6.1.2"
   },
   "engines": {

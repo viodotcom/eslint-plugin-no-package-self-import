@@ -1,6 +1,6 @@
 # eslint-plugin-no-package-self-import
 
-An ESLint plugin for finding packages that import themselves
+An ESLint plugin for finding instances of a package importing from itself
 
 ## Installation
 
