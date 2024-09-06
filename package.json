@@ -1,11 +1,7 @@
 {
   "name": "eslint-plugin-no-package-self-import",
   "version": "0.1.0",
-  "description": "An ESLint plugin for finding packages that import themselves",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "An ESLint plugin for finding instances of a package importing from itself",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viodotcom/eslint-plugin-no-package-self-import.git"
@@ -16,9 +12,33 @@
     "eslint-plugin"
   ],
   "author": "Gerrit Burger",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/viodotcom/eslint-plugin-no-package-self-import/issues"
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint .",
+    "update:eslint-docs": "eslint-doc-generator"
   },
-  "homepage": "https://github.com/viodotcom/eslint-plugin-no-package-self-import#readme"
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "eslint-doc-generator": "^1.0.0",
+    "eslint-plugin-eslint-plugin": "^6.0.0",
+    "eslint-plugin-n": "^17.0.0",
+    "npm-run-all2": "^6.1.2"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.57.0"
+  },
+  "license": "MIT"
 }
