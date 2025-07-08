@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-package-self-import",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An ESLint plugin for finding instances of a package importing from itself",
   "repository": {
     "type": "git",
